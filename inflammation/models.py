@@ -43,4 +43,3 @@ def daily_min(data):
     :return: array of minimum measurements (across patients) of inflammation data
     """
     return np.min(data, axis=0)
-
