@@ -49,3 +49,8 @@ def patient_normalise(data):
     """Normalise patient data from a 2D inflammation data array."""
     max = np.max(data, axis=1)
     return data / max[:, np.newaxis]
+
+
+def compute_std_dev(data):
+    """Compute standard deviation"""
+    np.std(data, axis=0)
