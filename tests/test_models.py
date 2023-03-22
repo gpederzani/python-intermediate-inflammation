@@ -29,6 +29,18 @@ def test_daily_mean_integers():
     # Need to use Numpy testing functions to compare arrays
     npt.assert_array_equal(daily_mean(test_input), test_result)
 
+def test_std():
+    """Test that mean function works for an array of positive integers."""
+    from inflammation.models import compute_std_dev
+
+    test_input = np.array([[1, 2],
+                           [3, 4],
+                           [5, 6]])
+    test_result = np.array([3, 4])
+
+    # Need to use Numpy testing functions to compare arrays
+    npt.assert_array_equal(compute_std_dev(test_input), test_result)
+
 
 import pytest
 
