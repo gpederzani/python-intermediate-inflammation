@@ -36,7 +36,7 @@ def test_std():
     test_input = np.array([[1, 2],
                            [3, 4],
                            [5, 6]])
-    test_result = np.array([3, 4])
+    test_result = np.array([3, 4, 5])
 
     # Need to use Numpy testing functions to compare arrays
     npt.assert_array_equal(compute_std_dev(test_input), test_result)
